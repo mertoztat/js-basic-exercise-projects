@@ -1,1 +1,1 @@
-### Collection of Projects to Improve My Javascript Skill.
+### Collection of Projects to Improve My Vanilla Javascript Skills.
