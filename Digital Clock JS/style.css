@@ -1,0 +1,44 @@
+
+
+body {
+    background-color: #424242;
+    color: #fff;
+    font-family: 'Orbitron';
+}
+
+
+
+#clock{
+    margin-top: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock h2 {
+    font-size: 50px;
+    color: crimson;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.clock-items {
+    background-color: #f2f2f2;
+    color: #000000;
+    font-size: 80px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 25px;
+    opacity: 0.8;
+    
+}
+
+#date{
+    font-size: 30px;
+}
+
