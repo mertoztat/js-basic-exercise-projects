@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.8) 55%, rgba(223, 5, 5, 0.9) 100%);
+
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.8s ease-in; /* sol tarafa doğru açılır 0.8 sn de */    
+}
+
+.panel h2{
+    font-size: 36px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    opacity: 0;
+
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h2 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+    
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6) {
+        display: none;
+    }
+
+  }
